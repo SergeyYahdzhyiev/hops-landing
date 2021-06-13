@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './animations.css';
+
+@import './components/header.css';
+@import './components/banner.css';
+
+:root {
+  --clr-text: hsl(201, 81%, 80%);
+  --clr-bg: hsl(230, 90%, 4%);
+  --clr-glow: hsl(199, 76%, 92%);
+  --clr-red: hsl(39, 100%, 59%);
+  --clr-blue: hsl(113, 90%, 46%);
+  --clr-green: rgb(40, 180, 255);
+
+  --b-radius: 5px;
+
+  --text-clr-animation: colors 10000ms ease-in-out alternate infinite;
+  --text-shadow: 0 0 15px currentColor;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background: var(--clr-bg);
+  color: var(--clr-text);
+
+  perspective: 500px;
+}
+
+main {
+  transition: margin-top 300ms ease;
+}
+main.slided {
+  margin-top: 148px;
+}
+button {
+  font-family: 'Roboto';
+}

@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.banner-col {
+  display: flex;
+  flex-direction: column;
+}
+.banner-title {
+  font-size: max(42px, 6vw);
+  animation: var(--text-clr-animation);
+  text-shadow: var(--text-shadow);
+}
+.banner-button {
+  font-size: max(20px, 2vw);
+  font-weight: 500;
+
+  max-width: max-content;
+
+  position: relative;
+
+  padding: 0.5em 1.5em;
+
+  border: 3px solid currentColor;
+  border-radius: 3em;
+
+  background-color: transparent;
+  color: currentColor;
+
+  animation: var(--text-clr-animation);
+
+  cursor: pointer;
+
+  outline: none;
+  transition: transform 300ms ease;
+}
+
+.banner-button:hover,
+.banner-button:focus {
+  text-shadow: 0 0 10px currentColor;
+  box-shadow: 0 0 5px 0.2px currentColor, inset 0 0 5px 0.2px currentColor;
+}
+
+.banner-button:active {
+  transform: scale(0.95);
+}
