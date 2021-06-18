@@ -3,6 +3,7 @@
 
 @import './components/header.css';
 @import './components/banner.css';
+@import './components/footer.css';
 
 :root {
   --clr-text: hsl(201, 81%, 80%);
@@ -16,6 +17,8 @@
 
   --text-clr-animation: colors 10000ms ease-in-out alternate infinite;
   --text-shadow: 0 0 15px currentColor;
+
+  --border-clr-animation: colors 10000ms ease-in-out alternate infinite;
 }
 
 * {
@@ -27,9 +30,10 @@ body {
   font-weight: 300;
 
   width: 100%;
+  max-width: 1280px;
   min-height: 100vh;
 
-  margin: 0;
+  margin: 0 auto;
 
   background: var(--clr-bg);
   color: var(--clr-text);

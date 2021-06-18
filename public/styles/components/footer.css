@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 40px;
+
+  min-height: 80px;
+  
+  border-top-style: solid;
+  border-top-width: 2px;
+
+  animation: var(--border-clr-animation);
+  box-shadow: 0 0 5px 1px currentColor;
+  text-shadow: var(--text-shadow);
+}
+.footer-social {
+  display: flex;
+
+  font-size: max(24px, 3vw);
+}
+.footer-social a {
+  color: unset;
+  margin: 5px;
+}
+@media(min-width: 568px) {
+  footer {
+    flex-direction: row;
+  }
+}
